@@ -39,11 +39,11 @@ const Forcast = () => {
           <h5>4 m/s</h5>
         </div>
 
-        <div className='text-center w-[135px] '>
+        {/* <div className='text-center w-[135px] '>
           <img width={60} src={WINDSPEED} className='mx-auto'></img>
           <div className="font-semibold">Wind speed</div>
           <h5>4 m/s</h5>
-        </div>
+        </div> */}
 
         <div className='text-center w-[135px]'>
           <img width={60} src={VISIBLEBLACK} className='mx-auto'></img>
