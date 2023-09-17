@@ -9,10 +9,12 @@ import axios from "axios";
 const Singelfile = () => {
        const [wheatherdata, setwheatherData] = useState({});
        const [searchInput, setSearchInput] = useState("");
-       console.log(wheatherdata);
+       // console.log(wheatherdata);
        useEffect(() => {
               callApi("karachi")
+
        }, [])
+       
        const callApi = async (citylao) => {
               try {
                      console.log(citylao);
@@ -40,6 +42,7 @@ const Singelfile = () => {
                                                                onChange={(e) => setSearchInput(e.target.value)}
                                                         />
                                                         <Button
+                                                               type="submit"
                                                                size="sm"
                                                                className="!absolute right-1 top-1 rounded bg-blue-700">
                                                                Search
