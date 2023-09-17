@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap');
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Work Sans', sans-serif;
+}
+
+.outer-box{
+       /* width: 100vw; */
+       /* height: auto;  */
+       background: linear-gradient(to top left, #feffff  , #bad0d3);
+}
+.inner-box{
+       /* border: 1px solid red; */
+       padding: 5px;
+        width:100%;
+       /* min-width: 300px;  */
+       width: 50%;
+       height:120vh;
+       margin: 0 auto;
+       /* text-align: center; */
+       position: relative;
+       /* top: 80%; */
+       /* transform: translatey(40%);  */
+       /* padding: 20px 40px; */
+       background:linear-gradient(to top left , #ffffffff , #ffffff33);
+       /* backdrop-filter: blur(9px); */
+       /* border-radius: 8px; */
+       background: rgba( 255, 255, 255, 0.25 );
+       box-shadow: 0 8px 32px 0 rgba(88, 97, 215, 0.37);
+       backdrop-filter: blur( 9px );
+       -webkit-backdrop-filter: blur( 4px );
+       background: linear-gradient(to top left, #bad4ed  , #d4e1e2);
+       z-index: 2;
+}
+.glassmorphic-effect1{
+       background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 20px;
+height: 100%;
+}
+
+
+@media only screen and (max-width: 425px) {
+       .inner-box{
+       width: 100%;
+       }
+      
+}
+
+
