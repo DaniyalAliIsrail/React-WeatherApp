@@ -21,6 +21,7 @@ const Singelfile = () => {
         `https://api.openweathermap.org/data/2.5/weather?q=${citylao}&appid=40ed58a2765c4a602efac457943bedcc&units=metric`
       );
       setwheatherData(data.data);
+      setSearchInput("");
     } catch (error) {
       console.log("error", error);
     }
@@ -44,6 +45,7 @@ const Singelfile = () => {
                   label="Enter City Name"
                   className="pr-20"
                   onChange={(e) => setSearchInput(e.target.value)}
+                  value={searchInput}
                 />
                 <Button
                   type="submit"
